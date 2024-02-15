@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { SerchPageRoutingModule } from './serch-routing.module';
 
 import { SerchPage } from './serch.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SerchPageRoutingModule
+    SerchPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [SerchPage]
 })
