@@ -1,13 +1,12 @@
-dashedBorderBottom{
-    border-bottom: 1px dashed var(--ion-color-medium);
-    padding-bottom: 1.5vh;
-    margin-bottom: 1vh;
-}
-
 h1{
     font-weight: bold;
     font-size: 1.2rem;
-}
+   }
+   .dashedBorderBottom{
+    border-bottom: 1px dashed var(--ion-color-medium);
+    padding-bottom: 1.5vh;
+    margin-bottom: 1vh;
+   }
 .veg{
     align-items: center;
 }
@@ -43,5 +42,19 @@ ion-text{
     font-size: 0.8rem;
     p{
         margin-top: 0.2rem;
+    }
+}
+ion-footer{
+    h4{
+        margin-left: 3%;
+    }
+    p{
+        font-size: 0.7rem !important;
+        margin-left: 3%;
+        letter-spacing: 0.6px;
+    
+    }
+    ion-button{
+        color: white;
     }
 }
