@@ -6,12 +6,13 @@ import { ItensPage } from './itens.page';
 const routes: Routes = [
   {
     path: '',
-    component: ItensPage
+    component: ItensPage,
   },
-   {
-      path: 'cart',
-      loadChildren: () => import('../../tabs/cart/cart.module').then( m => m.CartPageModule)
-    },
+  {
+    path: 'cart',
+    loadChildren: () =>
+      import('../../tabs/cart/cart.module').then((m) => m.CartPageModule),
+  },
 ];
 
 @NgModule({

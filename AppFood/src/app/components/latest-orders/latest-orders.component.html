@@ -1,0 +1,40 @@
+
+  <ion-item-group>
+    <ion-item lines="none">
+      <ion-label>
+        <h4>{{latestOrder?.name_restaurant}}</h4>
+        <p>{{latestOrder?.local}}</p>
+        <ion-text>
+          <p> R$: {{latestOrder?.price}} <ion-icon name="chevron-forward-outline"></ion-icon></p>
+        </ion-text>
+      </ion-label>
+      <ion-note slot="end" color="dark">
+        {{latestOrder?.status}}
+        <ion-icon *ngIf="latestOrder.status === 'Entregue'" name="checkmark-circle-outline" color="success"></ion-icon>
+        <ion-icon *ngIf="latestOrder.status === 'Cancelado'" name="close-circle-outline" color="danger"></ion-icon>
+      </ion-note>
+      
+    
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-text color="dark">
+          <p>{{latestOrder?.items}}</p>
+  
+        </ion-text>
+        <p style="margin-top: 2%;"> {{latestOrder?.date}}</p>
+        <ion-row>
+          <ion-col col="6">
+            <ion-button fill="outline" expand="block">
+              Pedir novamente
+            </ion-button>
+          </ion-col>
+          <ion-col col="6">
+            <ion-button fill="outline" expand="block" color="dark">
+              Abrir reclamação
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-label>
+    </ion-item>
+  </ion-item-group>

@@ -14,7 +14,7 @@ export class ItensPage implements OnInit {
       uid: 'dh1',
       cover: 'assets/imgs/img1.jpeg',
       name: 'Dom Henrique 1',
-      address:'Av Brasil, 475 Cambira-Pr',
+      address: 'Av Brasil, 475 Cambira-Pr',
       short_name: 'domhenrique1',
       cuisines: ['Almoço', 'Café', 'Hamburguer'],
       rating: 5,
@@ -123,7 +123,7 @@ export class ItensPage implements OnInit {
   }
 
   async viewCart() {
-    if (this.cartData.itens && this.cartData.itens.length > 0){
+    if (this.cartData.itens && this.cartData.itens.length > 0) {
       await this.saveToCart();
     }
     this.router.navigate([this.router.url + '/cart']);
